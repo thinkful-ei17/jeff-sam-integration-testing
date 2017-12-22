@@ -1,2 +1,10 @@
 language: node_js
 node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: NkqtYhD2M3hOj7mRM6uM53+l533Brh7cGaemhgryL2+0aM5B/lYGlFrQF+HrlwhkPiY+71MA6aBXZWIk9pReghF5IlcvNq/l7VfV4QWNTuggTzDdiM30+mM9TvQitOjGcWTjaC+05Pf+z+7UGaxcea6xgNzUxdf9ZyOs2Q4B15ERnqOyULa+DepfACVzHLU5AyOk09lP/ajNf0Wl1LZMcBP1fzXg19kpN4HJmfBvKJlTtZURM9c/to6GVFOKOkDEA24YToXbBI+sj0/necjPvmLrw6w7gIZtIv4SRfU66tL+mQBVxlS8weYbH/hTR2ifPv7iuba9KimSAaL6adxsCYVB4q7dLZ44MMPhKUSFs9zvbudtlHAmFAmnGU7+aMMuDGPAQEJaIFk/nJDseajRF/gzzLcMpeK/ZOsj1ldxeDnyiZlBXLkIHBrYMfDnW1wmAUzMphBlFVqX1GPXzFpQZEoBinoPVWC4t3L3+fGg8ugMuhzTsGVyoKC/TMheC50z3fF0mb/YeQEat6k7qCfGZf8Lt+rlpczn4nUWHZro0XTIJYorSJRmR8FYaB1eECwHpLElWvjqYWA14YMbCXMpqI0s/FukB3/gQeCdIhXxeH6Uuhg77NP/OLgdXPEnWKp6ZI/aHll+U19UsTwi1p9u8U33QmFzhcAhnwfpoQyjfOQ=
+  app: warm-beach-73338
+  on:
+    repo: thinkful-ei17/jeff-sam-integration-testing
+    branch: tests-for-recipes
