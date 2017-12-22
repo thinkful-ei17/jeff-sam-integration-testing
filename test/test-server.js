@@ -1,3 +1,5 @@
+'use strict';
+
 const chai = require('chai');
 const chaiHttp = require('chai-http');
 
@@ -49,7 +51,7 @@ describe('Shopping List', function() {
         res.should.have.status(200);
         res.should.be.json;
         res.body.should.be.a('array');
-
+        
         // because we create three items on app load
         res.body.length.should.be.at.least(1);
         // each item should be an object with key/value pairs
